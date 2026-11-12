@@ -74,13 +74,13 @@ function EditStaffModal({
 }: EditStaffModalProps) {
   const { data: faculties = [] } = useQuery({
     queryKey: ["faculties"],
-    queryFn: getFaculties,
+    queryFn: () => getFaculties(),
     enabled: isOpen,
   });
 
   const { data: departments = [] } = useQuery({
     queryKey: ["departments"],
-    queryFn: getDepartments,
+    queryFn: () => getDepartments(),
     enabled: isOpen,
   });
 
