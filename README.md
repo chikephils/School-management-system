@@ -19,6 +19,13 @@ The application is organised into two main components:
 
 PostgreSQL provides relational data storage, while Prisma ORM handles database access and migrations.
 
+
+## 🌐 Live Demo
+
+**Frontend:** [View Live Application](https://school-management-system-chi-dusky.vercel.app/)
+
+**Backend API:** https://school-management-system-aikz.onrender.com
+
 ## Features
 
 ### Academic Management
