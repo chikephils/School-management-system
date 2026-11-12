@@ -32,17 +32,17 @@ function RegisterStudentPage() {
 
   const { data: faculties = [], isLoading: isLoadingFaculties } = useQuery({
     queryKey: ["faculties"],
-    queryFn: getFaculties,
+    queryFn: () => getFaculties(),
   });
 
   const { data: departments = [], isLoading: isLoadingDepartments } = useQuery({
     queryKey: ["departments"],
-    queryFn: getDepartments,
+    queryFn: () => getDepartments(),
   });
 
   const { data: programmes = [], isLoading: isLoadingProgrammes } = useQuery({
     queryKey: ["programmes"],
-    queryFn: getProgrammes,
+    queryFn: () => getProgrammes(),
   });
 
   const {
